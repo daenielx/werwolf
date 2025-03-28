@@ -1,7 +1,8 @@
 [build]
-  base = "client/"
-  publish = "build/"
-  command = "npm run build"
+  base = "client"
+  publish = "build"
+  command = "npm install && npm run build"
+  ignore_submodules = true
 
 [[redirects]]
   from = "/*"
